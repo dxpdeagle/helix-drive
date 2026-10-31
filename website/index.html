@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0c111b">
+    <meta name="description" content="Helix is a Windows desktop app for sharing storage and files with a group you trust.">
+    <meta property="og:title" content="Helix — a shared drive for your circle">
+    <meta property="og:description" content="Share storage and files with a group you trust, using space members choose to offer from their own PCs.">
+    <meta property="og:type" content="website">
+    <title>Helix — a shared drive for your circle</title>
+    <link rel="icon" href="./assets/helix-mark.png" type="image/png">
+    <link rel="preconnect" href="https://api.github.com">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./site.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Helix home">
+        <img src="./assets/helix-mark.png" alt="" width="34" height="34">
+        <span>Helix</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#faq">Questions</a>
+        <a class="button button-small button-primary nav-download" href="https://github.com/dxpdeagle/helix-drive/releases/latest" data-download>
+          Download <span aria-hidden="true">↓</span>
+        </a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero section-wrap">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> A shared drive for your circle</p>
+          <h1>Share space.<br><span>Keep control.</span></h1>
+          <p class="hero-intro">Helix lets friends and family share files using storage they choose to offer from their own PCs.</p>
+          <div class="hero-actions">
+            <a class="button button-primary button-large" href="https://github.com/dxpdeagle/helix-drive/releases/latest" data-download>
+              <span>Download for Windows</span><span class="button-arrow" aria-hidden="true">↓</span>
+            </a>
+            <a class="button button-quiet button-large" href="#how-it-works">See how it works <span aria-hidden="true">→</span></a>
+          </div>
+          <p class="download-note"><span>Official Windows installer</span><span>64-bit · Windows</span></p>
+        </div>
+
+        <div class="hero-visual" aria-label="Illustration of a Helix shared drive connecting member computers">
+          <div class="visual-glow"></div>
+          <img class="hero-logo" src="./assets/helix-logo.png" alt="Helix DNA mark and wordmark">
+          <img class="network-illustration" src="./assets/helix-network.svg" alt="A shared drive connected to storage offered by group members">
+          <div class="visual-caption"><span class="live-dot"></span> Your group, connected</div>
+        </div>
+      </section>
+
+      <section class="trust-strip section-wrap" aria-label="Helix principles">
+        <div><span class="strip-mark">01</span><span>Storage stays on member PCs</span></div>
+        <div><span class="strip-mark">02</span><span>Choose how much to offer</span></div>
+        <div><span class="strip-mark">03</span><span>Invite people you trust</span></div>
+      </section>
+
+      <section class="section-wrap section-block" id="how-it-works">
+        <div class="section-heading">
+          <p class="eyebrow">A simple idea, shared</p>
+          <h2>Your group brings the space.</h2>
+          <p>Each person chooses a local storage location and contribution. Helix coordinates the shared drive between member computers.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card">
+            <div class="step-number">01</div>
+            <div class="step-icon icon-drive" aria-hidden="true"><span></span><span></span><span></span></div>
+            <h3>Create or join a drive</h3>
+            <p>Start a group for your people, or join one with an invite from someone you know.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-number">02</div>
+            <div class="step-icon icon-space" aria-hidden="true"><span></span></div>
+            <h3>Choose your contribution</h3>
+            <p>Pick the local disk and set a storage limit. Helix stores data as files are added; it does not pre-fill the space.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-number">03</div>
+            <div class="step-icon icon-people" aria-hidden="true"><span></span><span></span><span></span></div>
+            <h3>Share with approval</h3>
+            <p>Send a signed invite code or QR. A drive admin reviews each request before that device joins.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-wrap feature-section" id="features">
+        <div class="feature-copy">
+          <p class="eyebrow">Made for groups, not data centres</p>
+          <h2>One shared place.<br><span>Member-owned storage.</span></h2>
+          <p>Files are stored in encrypted chunks across participating PCs. The group can set how many copies to keep, while each person controls the space their own PC offers.</p>
+          <ul class="check-list">
+            <li>Browse, upload, organize and recover files in Helix</li>
+            <li>See members, roles, storage and transfer activity</li>
+            <li>LAN discovery helps find Helix PCs on the same network</li>
+          </ul>
+        </div>
+        <div class="feature-art storage-art" role="img" aria-label="Illustration showing group files distributed across member computers">
+          <div class="art-topline"><span>GROUP STORAGE</span><span class="art-lock">ENCRYPTED CHUNKS</span></div>
+          <div class="art-center"><div class="art-drive-icon"><i></i><i></i><i></i></div><strong>Shared drive</strong><small>Files placed across member PCs</small></div>
+          <div class="art-connectors"><i></i><i></i><i></i></div>
+          <div class="art-members">
+            <div><span class="member-glyph">Y</span><span>Your PC<small>Storage you choose</small></span><b>●</b></div>
+            <div><span class="member-glyph member-two">F</span><span>Friend's PC<small>When they are online</small></span><b>●</b></div>
+            <div><span class="member-glyph member-three">G</span><span>Group member<small>Storage they choose</small></span><b>●</b></div>
+          </div>
+          <p class="art-footnote">Illustration · actual capacity depends on member contributions and copies</p>
+        </div>
+      </section>
+
+      <section class="section-wrap connection-section">
+        <div class="connection-title">
+          <p class="eyebrow">Stay connected</p>
+          <h2>At home or farther away.</h2>
+          <p>Helix is peer-to-peer. Members' computers hold the files, so connections and availability depend on those PCs.</p>
+        </div>
+        <div class="connection-cards">
+          <article class="connection-card">
+            <span class="connection-icon" aria-hidden="true">⌂</span>
+            <div><h3>Same network</h3><p>LAN discovery is built in. Keep Helix running on a PC that stores the file so other members can reach it.</p></div>
+            <span class="connection-state">Available</span>
+          </article>
+          <article class="connection-card">
+            <span class="connection-icon icon-globe" aria-hidden="true">◎</span>
+            <div><h3>Different networks</h3><p>Internet sharing needs a reachable peer or the same public relay configured on each PC. Cross-country access is not automatic.</p></div>
+            <span class="connection-state state-setup">Setup required</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-wrap reality-panel">
+        <div class="reality-icon" aria-hidden="true">i</div>
+        <div><h2>Your contribution is a limit, not a pre-filled disk.</h2><p>Offering 10 GB lets Helix use up to that amount for group data on your selected storage volume. Space is used as files are stored. Replication can reduce the group's usable room; the Windows Explorer drive may show capacity differently from the in-app view.</p></div>
+      </section>
+
+      <section class="section-wrap faq-section" id="faq">
+        <div class="section-heading">
+          <p class="eyebrow">Good to know</p>
+          <h2>Before you download.</h2>
+        </div>
+        <div class="faq-list">
+          <details><summary>Can I sign in with Google and see my drives on another PC?</summary><p>Not yet. Helix 0.1.11 uses a local device identity and stores its private keys on that Windows account. A Google account, cloud recovery and automatic drive restoration across PCs are not implemented. Joining another PC currently requires a drive invite, and files need an online member PC holding a copy.</p></details>
+          <details><summary>Why might Windows show a security warning?</summary><p>The current installer is not digitally signed. Windows may therefore show an “unrecognized app” warning. Download Helix only from the official release link on this page. A signature can identify the publisher, but a new app may still need to build SmartScreen reputation.</p></details>
+          <details><summary>Does the Explorer drive work like a cloud drive?</summary><p>Helix includes a Windows drive mount, with the in-app Files view as a fallback. Explorer listing and capacity can vary with the installed filesystem driver and Windows WebDAV behavior; verify access in Helix if Explorer does not list files correctly.</p></details>
+          <details><summary>Does creating a contribution immediately use disk space?</summary><p>No. The contribution sets the maximum space Helix may use. It does not reserve or fill all of that space at setup. Data uses disk as group files are stored on your PC.</p></details>
+          <details><summary>What happens if a member PC is offline?</summary><p>Files need at least one online group PC holding a valid copy to be available. More copies can improve availability, and use more of the members' contributed storage.</p></details>
+        </div>
+      </section>
+
+      <section class="section-wrap final-cta">
+        <img src="./assets/helix-mark.png" alt="" width="46" height="46">
+        <div><p class="eyebrow">Start with your circle</p><h2>Try Helix on Windows.</h2><p>Create a drive, choose what to share, and invite your people.</p></div>
+        <a class="button button-primary button-large" href="https://github.com/dxpdeagle/helix-drive/releases/latest" data-download>Get Helix <span aria-hidden="true">↓</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer section-wrap">
+      <a class="brand footer-brand" href="#home"><img src="./assets/helix-mark.png" alt="" width="28" height="28"><span>Helix</span></a>
+      <span class="footer-copy">Storage shared by people, not a central cloud.</span>
+      <div class="footer-links"><a href="https://github.com/dxpdeagle/helix-drive/releases/latest">Releases</a><a href="https://github.com/dxpdeagle/helix-drive/blob/main/docs/network-sharing.md">Network setup</a></div>
+      <small>© <span data-year>2026</span> Helix Drive</small>
+    </footer>
+  </body>
+</html>
